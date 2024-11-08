@@ -88,15 +88,11 @@ struct WatchlistDetailView: View {
             })
         }
     }
-    ///
-    /// Shoes the view to add a new  Watchlist to the app
-    ///
+
     private func searchStockSymbols() {
         showingSearchSymbolsSheet = true
     }
-    ///
-    /// Deletes the selected watchlist
-    ///
+
     private func removeStockSymbol(offsets: IndexSet) {
         let _ = withAnimation {
             Task {

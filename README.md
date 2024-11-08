@@ -1,10 +1,3 @@
-//
-//  README.md
-//  StockWatcher
-//
-//  Created by KEVIN DUELLMAN on 11/8/24.
-//
-
 ## Requirements
 
 * iPhone simulator 16 Pro
@@ -34,7 +27,7 @@
 6. Create multiple Watchlists
 7. View Watchlist entries
 8. Search symbols
-9. Canel search
+9. Cancel search
 10. Add symbol to watchlist
 11. Delete symbol from watchlist
 12. Symbol detail view
@@ -57,6 +50,7 @@
 * Improved UI to indicate API requests are in progress 
 * Enhanced local storage implementation (SwiftData)
 * Adding SwiftLint to the build process
+* Improved Preview functionality
 
 ## Known issues
 * There is a constraints warning in the console referencing UIRemoteKeyboardPlaceholderView. This appears to be a known issue when using the keyboard in the simulator. Futher investigation is needed to silence this warning. 

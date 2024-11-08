@@ -1,0 +1,9 @@
+
+xcuserdata/
+.DS_Store
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+

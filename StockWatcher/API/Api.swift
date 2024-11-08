@@ -79,7 +79,6 @@ struct Api {
     ///
     func request<D: Decodable>(resource: ApiResource) async throws -> D {
         
-      //  print("making request == \(resource)")
         let (data, response) = try await URLSession.shared.data(for: resource.urlRequest)
         
         guard let httpResponse = response as? HTTPURLResponse else {

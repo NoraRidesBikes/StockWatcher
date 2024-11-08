@@ -17,10 +17,8 @@ final class SymbolSearchApi {
     /// Searches the stock symbol endpoint 
     ///
     func search(request: SymbolSearchRequest) async throws -> SymbolSearchResponse {
-        print("Searching?")
         let resource = try ApiResource(host: host, path: .searchSymbols, method: .get, pathAppending: request.searchString)
         let response: SymbolSearchResponse = try await Api.shared.request(resource: resource)
-        print("returning? \(response.items)")
         return response
     }
 }
