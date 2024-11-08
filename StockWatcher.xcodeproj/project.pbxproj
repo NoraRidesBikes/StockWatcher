@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		907439A82CDD74CD00622649 /* MarketDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907439A72CDD74BD00622649 /* MarketDataRequest.swift */; };
+		907439AA2CDD757700622649 /* MarketDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907439A92CDD757500622649 /* MarketDataResponse.swift */; };
+		907439AD2CDDA7CD00622649 /* SymbolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907439AC2CDDA7C300622649 /* SymbolDetailView.swift */; };
+		907439AF2CDDC62C00622649 /* StockSymbolCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907439AE2CDDC61E00622649 /* StockSymbolCard.swift */; };
+		907439B12CDE611100622649 /* Demo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 907439B02CDE611100622649 /* Demo.mov */; };
+		909130E42CD96C1B00350FC5 /* StockWatcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909130E32CD96C1B00350FC5 /* StockWatcherApp.swift */; };
+		909130EA2CD96C1C00350FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909130E92CD96C1C00350FC5 /* Assets.xcassets */; };
+		909130EE2CD96C1C00350FC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909130ED2CD96C1C00350FC5 /* Preview Assets.xcassets */; };
+		909130F82CD96C1C00350FC5 /* StockWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909130F72CD96C1C00350FC5 /* StockWatcherTests.swift */; };
+		909131022CD96C1C00350FC5 /* StockWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909131012CD96C1C00350FC5 /* StockWatcherUITests.swift */; };
+		909131042CD96C1C00350FC5 /* StockWatcherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909131032CD96C1C00350FC5 /* StockWatcherUITestsLaunchTests.swift */; };
+		90E446922CD9983C00B5951F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446912CD9983800B5951F /* LoginView.swift */; };
+		90E446952CD99E9F00B5951F /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446942CD99E9500B5951F /* LoginApi.swift */; };
+		90E4469E2CDA4DE300B5951F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E4469D2CDA4DD800B5951F /* LoginViewModel.swift */; };
+		90E446A02CDA505300B5951F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 90E4469F2CDA505300B5951F /* Localizable.xcstrings */; };
+		90E446A22CDA787100B5951F /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446A12CDA786D00B5951F /* LoginRequest.swift */; };
+		90E446A42CDA7F4500B5951F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446A32CDA7F4100B5951F /* LoginResponse.swift */; };
+		90E446AB2CDBA13B00B5951F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446AA2CDBA13700B5951F /* AuthService.swift */; };
+		90E446AE2CDBA1D900B5951F /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 90E446AD2CDBA1D900B5951F /* KeychainSwift */; };
+		90E446B82CDBB75B00B5951F /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446B72CDBB75100B5951F /* WatchlistView.swift */; };
+		90E446BC2CDBCE7000B5951F /* Watchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446BB2CDBCE6800B5951F /* Watchlist.swift */; };
+		90E446BE2CDBCEC600B5951F /* WatchlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446BD2CDBCEC300B5951F /* WatchlistViewModel.swift */; };
+		90E446C02CDBD57E00B5951F /* WatchlistApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446BF2CDBD57900B5951F /* WatchlistApi.swift */; };
+		90E446C22CDBEBFC00B5951F /* CreateWatchlistRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446C12CDBEBF400B5951F /* CreateWatchlistRequest.swift */; };
+		90E446C42CDBF67E00B5951F /* AddWatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446C32CDBF67800B5951F /* AddWatchlistView.swift */; };
+		90E446C62CDBF7F400B5951F /* AddWatchlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446C52CDBF7F100B5951F /* AddWatchlistViewModel.swift */; };
+		90E446C82CDBFD9100B5951F /* WatchlistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446C72CDBFD8C00B5951F /* WatchlistsResponse.swift */; };
+		90E446CB2CDC13EA00B5951F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446CA2CDC13E700B5951F /* Api.swift */; };
+		90E446CF2CDC54E300B5951F /* DeleteWatchlistRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446CE2CDC54E300B5951F /* DeleteWatchlistRequest.swift */; };
+		90E446D22CDC631D00B5951F /* WatchlistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446D12CDC631300B5951F /* WatchlistDetailView.swift */; };
+		90E446D42CDC636000B5951F /* WatchlistDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446D32CDC635A00B5951F /* WatchlistDetailViewModel.swift */; };
+		90E446D62CDC66D100B5951F /* SearchSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446D52CDC66C400B5951F /* SearchSymbolsView.swift */; };
+		90E446D82CDD002100B5951F /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446D72CDD001800B5951F /* SubmitButton.swift */; };
+		90E446DB2CDD08AA00B5951F /* LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446DA2CDD08A700B5951F /* LocalizedStringKey.swift */; };
+		90E446DD2CDD0A0A00B5951F /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446DC2CDD0A0400B5951F /* FormTextField.swift */; };
+		90E446DF2CDD0D6900B5951F /* FormLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446DE2CDD0D5A00B5951F /* FormLabel.swift */; };
+		90E446E12CDD0E6100B5951F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446E02CDD0E5F00B5951F /* String.swift */; };
+		90E446E32CDD1B1100B5951F /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446E22CDD1B0C00B5951F /* ApiError.swift */; };
+		90E446E52CDD354700B5951F /* SymbolSearchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446E42CDD353B00B5951F /* SymbolSearchApi.swift */; };
+		90E446E72CDD35A600B5951F /* SymbolSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446E62CDD359D00B5951F /* SymbolSearchResponse.swift */; };
+		90E446E92CDD35B300B5951F /* SymbolSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446E82CDD35AC00B5951F /* SymbolSearchRequest.swift */; };
+		90E446EB2CDD397600B5951F /* SearchSymbolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446EA2CDD397000B5951F /* SearchSymbolsViewModel.swift */; };
+		90E446ED2CDD39E300B5951F /* StockSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446EC2CDD39DE00B5951F /* StockSymbol.swift */; };
+		90E446EF2CDD432400B5951F /* WatchlistRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446EE2CDD431F00B5951F /* WatchlistRequest.swift */; };
+		90E446F12CDD4E1200B5951F /* WatchlistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446F02CDD4E0800B5951F /* WatchlistResponse.swift */; };
+		90E446F42CDD582C00B5951F /* MarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446F32CDD582800B5951F /* MarketData.swift */; };
+		90E446F62CDD583B00B5951F /* MarketDataApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E446F52CDD583100B5951F /* MarketDataApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		909130F42CD96C1C00350FC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 909130D82CD96C1B00350FC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 909130DF2CD96C1B00350FC5;
+			remoteInfo = StockWatcher;
+		};
+		909130FE2CD96C1C00350FC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 909130D82CD96C1B00350FC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 909130DF2CD96C1B00350FC5;
+			remoteInfo = StockWatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		907439A72CDD74BD00622649 /* MarketDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataRequest.swift; sourceTree = "<group>"; };
+		907439A92CDD757500622649 /* MarketDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataResponse.swift; sourceTree = "<group>"; };
+		907439AC2CDDA7C300622649 /* SymbolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailView.swift; sourceTree = "<group>"; };
+		907439AE2CDDC61E00622649 /* StockSymbolCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockSymbolCard.swift; sourceTree = "<group>"; };
+		907439B02CDE611100622649 /* Demo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Demo.mov; sourceTree = "<group>"; };
+		909130E02CD96C1B00350FC5 /* StockWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		909130E32CD96C1B00350FC5 /* StockWatcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWatcherApp.swift; sourceTree = "<group>"; };
+		909130E92CD96C1C00350FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		909130EB2CD96C1C00350FC5 /* StockWatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StockWatcher.entitlements; sourceTree = "<group>"; };
+		909130ED2CD96C1C00350FC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		909130F32CD96C1C00350FC5 /* StockWatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockWatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		909130F72CD96C1C00350FC5 /* StockWatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWatcherTests.swift; sourceTree = "<group>"; };
+		909130FD2CD96C1C00350FC5 /* StockWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		909131012CD96C1C00350FC5 /* StockWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWatcherUITests.swift; sourceTree = "<group>"; };
+		909131032CD96C1C00350FC5 /* StockWatcherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWatcherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		90E446892CD995C900B5951F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		90E446912CD9983800B5951F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		90E446942CD99E9500B5951F /* LoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
+		90E4469D2CDA4DD800B5951F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		90E4469F2CDA505300B5951F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		90E446A12CDA786D00B5951F /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		90E446A32CDA7F4100B5951F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		90E446AA2CDBA13700B5951F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		90E446B72CDBB75100B5951F /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
+		90E446BB2CDBCE6800B5951F /* Watchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watchlist.swift; sourceTree = "<group>"; };
+		90E446BD2CDBCEC300B5951F /* WatchlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistViewModel.swift; sourceTree = "<group>"; };
+		90E446BF2CDBD57900B5951F /* WatchlistApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistApi.swift; sourceTree = "<group>"; };
+		90E446C12CDBEBF400B5951F /* CreateWatchlistRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWatchlistRequest.swift; sourceTree = "<group>"; };
+		90E446C32CDBF67800B5951F /* AddWatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWatchlistView.swift; sourceTree = "<group>"; };
+		90E446C52CDBF7F100B5951F /* AddWatchlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWatchlistViewModel.swift; sourceTree = "<group>"; };
+		90E446C72CDBFD8C00B5951F /* WatchlistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistsResponse.swift; sourceTree = "<group>"; };
+		90E446CA2CDC13E700B5951F /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		90E446CE2CDC54E300B5951F /* DeleteWatchlistRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteWatchlistRequest.swift; sourceTree = "<group>"; };
+		90E446D12CDC631300B5951F /* WatchlistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistDetailView.swift; sourceTree = "<group>"; };
+		90E446D32CDC635A00B5951F /* WatchlistDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistDetailViewModel.swift; sourceTree = "<group>"; };
+		90E446D52CDC66C400B5951F /* SearchSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSymbolsView.swift; sourceTree = "<group>"; };
+		90E446D72CDD001800B5951F /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
+		90E446DA2CDD08A700B5951F /* LocalizedStringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringKey.swift; sourceTree = "<group>"; };
+		90E446DC2CDD0A0400B5951F /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		90E446DE2CDD0D5A00B5951F /* FormLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabel.swift; sourceTree = "<group>"; };
+		90E446E02CDD0E5F00B5951F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		90E446E22CDD1B0C00B5951F /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		90E446E42CDD353B00B5951F /* SymbolSearchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolSearchApi.swift; sourceTree = "<group>"; };
+		90E446E62CDD359D00B5951F /* SymbolSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolSearchResponse.swift; sourceTree = "<group>"; };
+		90E446E82CDD35AC00B5951F /* SymbolSearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolSearchRequest.swift; sourceTree = "<group>"; };
+		90E446EA2CDD397000B5951F /* SearchSymbolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSymbolsViewModel.swift; sourceTree = "<group>"; };
+		90E446EC2CDD39DE00B5951F /* StockSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockSymbol.swift; sourceTree = "<group>"; };
+		90E446EE2CDD431F00B5951F /* WatchlistRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistRequest.swift; sourceTree = "<group>"; };
+		90E446F02CDD4E0800B5951F /* WatchlistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistResponse.swift; sourceTree = "<group>"; };
+		90E446F32CDD582800B5951F /* MarketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketData.swift; sourceTree = "<group>"; };
+		90E446F52CDD583100B5951F /* MarketDataApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataApi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		909130DD2CD96C1B00350FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E446AE2CDBA1D900B5951F /* KeychainSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909130F02CD96C1C00350FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909130FA2CD96C1C00350FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		907439AB2CDDA7B300622649 /* Symbol */ = {
+			isa = PBXGroup;
+			children = (
+				907439AC2CDDA7C300622649 /* SymbolDetailView.swift */,
+			);
+			path = Symbol;
+			sourceTree = "<group>";
+		};
+		909130D72CD96C1B00350FC5 = {
+			isa = PBXGroup;
+			children = (
+				907439B02CDE611100622649 /* Demo.mov */,
+				90E4469F2CDA505300B5951F /* Localizable.xcstrings */,
+				90E446892CD995C900B5951F /* README.md */,
+				909130E22CD96C1B00350FC5 /* StockWatcher */,
+				909130F62CD96C1C00350FC5 /* StockWatcherTests */,
+				909131002CD96C1C00350FC5 /* StockWatcherUITests */,
+				90E446AC2CDBA1D900B5951F /* Frameworks */,
+				909130E12CD96C1B00350FC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		909130E12CD96C1B00350FC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				909130E02CD96C1B00350FC5 /* StockWatcher.app */,
+				909130F32CD96C1C00350FC5 /* StockWatcherTests.xctest */,
+				909130FD2CD96C1C00350FC5 /* StockWatcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		909130E22CD96C1B00350FC5 /* StockWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				90E446932CD99E8800B5951F /* API */,
+				909130E92CD96C1C00350FC5 /* Assets.xcassets */,
+				90E446A92CDBA12F00B5951F /* Auth */,
+				90E446D92CDD089B00B5951F /* Extensions */,
+				90E4469C2CDA4C9F00B5951F /* Login */,
+				90E446F22CDD581B00B5951F /* MarketData */,
+				909130EC2CD96C1C00350FC5 /* Preview Content */,
+				90E446D02CDC62EA00B5951F /* Search */,
+				909130EB2CD96C1C00350FC5 /* StockWatcher.entitlements */,
+				909130E32CD96C1B00350FC5 /* StockWatcherApp.swift */,
+				907439AB2CDDA7B300622649 /* Symbol */,
+				90E446902CD9981100B5951F /* View */,
+				90E446B62CDBB74B00B5951F /* Watchlist */,
+			);
+			path = StockWatcher;
+			sourceTree = "<group>";
+		};
+		909130EC2CD96C1C00350FC5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				909130ED2CD96C1C00350FC5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		909130F62CD96C1C00350FC5 /* StockWatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				909130F72CD96C1C00350FC5 /* StockWatcherTests.swift */,
+			);
+			path = StockWatcherTests;
+			sourceTree = "<group>";
+		};
+		909131002CD96C1C00350FC5 /* StockWatcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				909131012CD96C1C00350FC5 /* StockWatcherUITests.swift */,
+				909131032CD96C1C00350FC5 /* StockWatcherUITestsLaunchTests.swift */,
+			);
+			path = StockWatcherUITests;
+			sourceTree = "<group>";
+		};
+		90E446902CD9981100B5951F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				907439AE2CDDC61E00622649 /* StockSymbolCard.swift */,
+				90E446DE2CDD0D5A00B5951F /* FormLabel.swift */,
+				90E446DC2CDD0A0400B5951F /* FormTextField.swift */,
+				90E446D72CDD001800B5951F /* SubmitButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90E446932CD99E8800B5951F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				90E446CA2CDC13E700B5951F /* Api.swift */,
+				90E446E22CDD1B0C00B5951F /* ApiError.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		90E4469C2CDA4C9F00B5951F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				90E446A32CDA7F4100B5951F /* LoginResponse.swift */,
+				90E446A12CDA786D00B5951F /* LoginRequest.swift */,
+				90E4469D2CDA4DD800B5951F /* LoginViewModel.swift */,
+				90E446912CD9983800B5951F /* LoginView.swift */,
+				90E446942CD99E9500B5951F /* LoginApi.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		90E446A92CDBA12F00B5951F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				90E446AA2CDBA13700B5951F /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		90E446AC2CDBA1D900B5951F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90E446B62CDBB74B00B5951F /* Watchlist */ = {
+			isa = PBXGroup;
+			children = (
+				90E446C32CDBF67800B5951F /* AddWatchlistView.swift */,
+				90E446C52CDBF7F100B5951F /* AddWatchlistViewModel.swift */,
+				90E446C12CDBEBF400B5951F /* CreateWatchlistRequest.swift */,
+				90E446CE2CDC54E300B5951F /* DeleteWatchlistRequest.swift */,
+				90E446BB2CDBCE6800B5951F /* Watchlist.swift */,
+				90E446BF2CDBD57900B5951F /* WatchlistApi.swift */,
+				90E446D12CDC631300B5951F /* WatchlistDetailView.swift */,
+				90E446D32CDC635A00B5951F /* WatchlistDetailViewModel.swift */,
+				90E446EE2CDD431F00B5951F /* WatchlistRequest.swift */,
+				90E446F02CDD4E0800B5951F /* WatchlistResponse.swift */,
+				90E446C72CDBFD8C00B5951F /* WatchlistsResponse.swift */,
+				90E446B72CDBB75100B5951F /* WatchlistView.swift */,
+				90E446BD2CDBCEC300B5951F /* WatchlistViewModel.swift */,
+			);
+			path = Watchlist;
+			sourceTree = "<group>";
+		};
+		90E446D02CDC62EA00B5951F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				90E446D52CDC66C400B5951F /* SearchSymbolsView.swift */,
+				90E446EA2CDD397000B5951F /* SearchSymbolsViewModel.swift */,
+				90E446EC2CDD39DE00B5951F /* StockSymbol.swift */,
+				90E446E42CDD353B00B5951F /* SymbolSearchApi.swift */,
+				90E446E82CDD35AC00B5951F /* SymbolSearchRequest.swift */,
+				90E446E62CDD359D00B5951F /* SymbolSearchResponse.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		90E446D92CDD089B00B5951F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90E446DA2CDD08A700B5951F /* LocalizedStringKey.swift */,
+				90E446E02CDD0E5F00B5951F /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		90E446F22CDD581B00B5951F /* MarketData */ = {
+			isa = PBXGroup;
+			children = (
+				907439A92CDD757500622649 /* MarketDataResponse.swift */,
+				907439A72CDD74BD00622649 /* MarketDataRequest.swift */,
+				90E446F52CDD583100B5951F /* MarketDataApi.swift */,
+				90E446F32CDD582800B5951F /* MarketData.swift */,
+			);
+			path = MarketData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		909130DF2CD96C1B00350FC5 /* StockWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 909131072CD96C1C00350FC5 /* Build configuration list for PBXNativeTarget "StockWatcher" */;
+			buildPhases = (
+				909130DC2CD96C1B00350FC5 /* Sources */,
+				909130DD2CD96C1B00350FC5 /* Frameworks */,
+				909130DE2CD96C1B00350FC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StockWatcher;
+			productName = StockWatcher;
+			productReference = 909130E02CD96C1B00350FC5 /* StockWatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		909130F22CD96C1C00350FC5 /* StockWatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9091310A2CD96C1C00350FC5 /* Build configuration list for PBXNativeTarget "StockWatcherTests" */;
+			buildPhases = (
+				909130EF2CD96C1C00350FC5 /* Sources */,
+				909130F02CD96C1C00350FC5 /* Frameworks */,
+				909130F12CD96C1C00350FC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				909130F52CD96C1C00350FC5 /* PBXTargetDependency */,
+			);
+			name = StockWatcherTests;
+			productName = StockWatcherTests;
+			productReference = 909130F32CD96C1C00350FC5 /* StockWatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		909130FC2CD96C1C00350FC5 /* StockWatcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9091310D2CD96C1C00350FC5 /* Build configuration list for PBXNativeTarget "StockWatcherUITests" */;
+			buildPhases = (
+				909130F92CD96C1C00350FC5 /* Sources */,
+				909130FA2CD96C1C00350FC5 /* Frameworks */,
+				909130FB2CD96C1C00350FC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				909130FF2CD96C1C00350FC5 /* PBXTargetDependency */,
+			);
+			name = StockWatcherUITests;
+			productName = StockWatcherUITests;
+			productReference = 909130FD2CD96C1C00350FC5 /* StockWatcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		909130D82CD96C1B00350FC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					909130DF2CD96C1B00350FC5 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					909130F22CD96C1C00350FC5 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 909130DF2CD96C1B00350FC5;
+					};
+					909130FC2CD96C1C00350FC5 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 909130DF2CD96C1B00350FC5;
+					};
+				};
+			};
+			buildConfigurationList = 909130DB2CD96C1B00350FC5 /* Build configuration list for PBXProject "StockWatcher" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 909130D72CD96C1B00350FC5;
+			packageReferences = (
+				90E446A82CDBA10C00B5951F /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
+			productRefGroup = 909130E12CD96C1B00350FC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				909130DF2CD96C1B00350FC5 /* StockWatcher */,
+				909130F22CD96C1C00350FC5 /* StockWatcherTests */,
+				909130FC2CD96C1C00350FC5 /* StockWatcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		909130DE2CD96C1B00350FC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909130EE2CD96C1C00350FC5 /* Preview Assets.xcassets in Resources */,
+				907439B12CDE611100622649 /* Demo.mov in Resources */,
+				909130EA2CD96C1C00350FC5 /* Assets.xcassets in Resources */,
+				90E446A02CDA505300B5951F /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909130F12CD96C1C00350FC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909130FB2CD96C1C00350FC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		909130DC2CD96C1B00350FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E446C82CDBFD9100B5951F /* WatchlistsResponse.swift in Sources */,
+				90E446A22CDA787100B5951F /* LoginRequest.swift in Sources */,
+				90E446D42CDC636000B5951F /* WatchlistDetailViewModel.swift in Sources */,
+				90E446E12CDD0E6100B5951F /* String.swift in Sources */,
+				90E446EB2CDD397600B5951F /* SearchSymbolsViewModel.swift in Sources */,
+				90E446922CD9983C00B5951F /* LoginView.swift in Sources */,
+				90E446ED2CDD39E300B5951F /* StockSymbol.swift in Sources */,
+				907439AF2CDDC62C00622649 /* StockSymbolCard.swift in Sources */,
+				90E446F62CDD583B00B5951F /* MarketDataApi.swift in Sources */,
+				90E446E92CDD35B300B5951F /* SymbolSearchRequest.swift in Sources */,
+				90E446C42CDBF67E00B5951F /* AddWatchlistView.swift in Sources */,
+				90E446E72CDD35A600B5951F /* SymbolSearchResponse.swift in Sources */,
+				90E446BE2CDBCEC600B5951F /* WatchlistViewModel.swift in Sources */,
+				90E446DB2CDD08AA00B5951F /* LocalizedStringKey.swift in Sources */,
+				90E446C62CDBF7F400B5951F /* AddWatchlistViewModel.swift in Sources */,
+				90E446C02CDBD57E00B5951F /* WatchlistApi.swift in Sources */,
+				907439AD2CDDA7CD00622649 /* SymbolDetailView.swift in Sources */,
+				90E446E52CDD354700B5951F /* SymbolSearchApi.swift in Sources */,
+				90E446C22CDBEBFC00B5951F /* CreateWatchlistRequest.swift in Sources */,
+				90E446F12CDD4E1200B5951F /* WatchlistResponse.swift in Sources */,
+				90E446F42CDD582C00B5951F /* MarketData.swift in Sources */,
+				90E446AB2CDBA13B00B5951F /* AuthService.swift in Sources */,
+				90E446E32CDD1B1100B5951F /* ApiError.swift in Sources */,
+				90E446A42CDA7F4500B5951F /* LoginResponse.swift in Sources */,
+				90E446D62CDC66D100B5951F /* SearchSymbolsView.swift in Sources */,
+				90E446CB2CDC13EA00B5951F /* Api.swift in Sources */,
+				90E446CF2CDC54E300B5951F /* DeleteWatchlistRequest.swift in Sources */,
+				90E446D22CDC631D00B5951F /* WatchlistDetailView.swift in Sources */,
+				90E4469E2CDA4DE300B5951F /* LoginViewModel.swift in Sources */,
+				90E446DF2CDD0D6900B5951F /* FormLabel.swift in Sources */,
+				90E446EF2CDD432400B5951F /* WatchlistRequest.swift in Sources */,
+				90E446D82CDD002100B5951F /* SubmitButton.swift in Sources */,
+				90E446B82CDBB75B00B5951F /* WatchlistView.swift in Sources */,
+				90E446952CD99E9F00B5951F /* LoginApi.swift in Sources */,
+				90E446DD2CDD0A0A00B5951F /* FormTextField.swift in Sources */,
+				907439A82CDD74CD00622649 /* MarketDataRequest.swift in Sources */,
+				909130E42CD96C1B00350FC5 /* StockWatcherApp.swift in Sources */,
+				907439AA2CDD757700622649 /* MarketDataResponse.swift in Sources */,
+				90E446BC2CDBCE7000B5951F /* Watchlist.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909130EF2CD96C1C00350FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909130F82CD96C1C00350FC5 /* StockWatcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909130F92CD96C1C00350FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909131042CD96C1C00350FC5 /* StockWatcherUITestsLaunchTests.swift in Sources */,
+				909131022CD96C1C00350FC5 /* StockWatcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		909130F52CD96C1C00350FC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 909130DF2CD96C1B00350FC5 /* StockWatcher */;
+			targetProxy = 909130F42CD96C1C00350FC5 /* PBXContainerItemProxy */;
+		};
+		909130FF2CD96C1C00350FC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 909130DF2CD96C1B00350FC5 /* StockWatcher */;
+			targetProxy = 909130FE2CD96C1C00350FC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		909131052CD96C1C00350FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		909131062CD96C1C00350FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		909131082CD96C1C00350FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StockWatcher/StockWatcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"StockWatcher/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noraridesbikes.StockWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		909131092CD96C1C00350FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StockWatcher/StockWatcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"StockWatcher/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noraridesbikes.StockWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9091310B2CD96C1C00350FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noraridesbikes.StockWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StockWatcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StockWatcher";
+			};
+			name = Debug;
+		};
+		9091310C2CD96C1C00350FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noraridesbikes.StockWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StockWatcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StockWatcher";
+			};
+			name = Release;
+		};
+		9091310E2CD96C1C00350FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noraridesbikes.StockWatcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StockWatcher;
+			};
+			name = Debug;
+		};
+		9091310F2CD96C1C00350FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noraridesbikes.StockWatcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StockWatcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		909130DB2CD96C1B00350FC5 /* Build configuration list for PBXProject "StockWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				909131052CD96C1C00350FC5 /* Debug */,
+				909131062CD96C1C00350FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		909131072CD96C1C00350FC5 /* Build configuration list for PBXNativeTarget "StockWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				909131082CD96C1C00350FC5 /* Debug */,
+				909131092CD96C1C00350FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9091310A2CD96C1C00350FC5 /* Build configuration list for PBXNativeTarget "StockWatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9091310B2CD96C1C00350FC5 /* Debug */,
+				9091310C2CD96C1C00350FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9091310D2CD96C1C00350FC5 /* Build configuration list for PBXNativeTarget "StockWatcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9091310E2CD96C1C00350FC5 /* Debug */,
+				9091310F2CD96C1C00350FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90E446A82CDBA10C00B5951F /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90E446AD2CDBA1D900B5951F /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90E446A82CDBA10C00B5951F /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 909130D82CD96C1B00350FC5 /* Project object */;
+}
